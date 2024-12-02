@@ -105,3 +105,26 @@ export default function App() {
   );
 }
 ```
+
+# 3 version épuré et simplifiée
+```jsx
+import { useState,useRef } from 'react';
+import './App.css'
+export default function App() {
+  const prenom = useRef('');
+  const nom = useRef('');
+  const [message,setmessage]=useState('') 
+  const afficher =()=>{
+
+   setmessage(`${prenom.current.value} ${nom.current.value}`)
+  }
+  return (
+    <>
+    <input ref={prenom}  onChange={afficher} />
+    <input ref={nom} onChange={afficher} />
+    <h1>{message}</h1>
+    </>
+  )
+}
+
+```
