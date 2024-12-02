@@ -210,3 +210,28 @@ export default function App() {
 }
 ```
 
+## Modifier le CSS avec les template de gabarits ${}
+```jsx
+import { useState } from 'react'
+import './App.css'
+
+export default function App() {
+  const [etat,setEtat]= useState(true)
+
+  const changer =()=>{
+    setEtat(!etat)
+  }
+  return (
+    <>
+    <div className="container">
+    {/* "btn btn-success" "btn btn-danger" */}
+    <button 
+    className={`btn btn-${etat? 'danger': 'success'}`} 
+    onClick={changer}>{etat ? 'OFF' : 'ON'}</button>
+    <h1>{etat ? 'ON' : 'off'}</h1>
+    </div>
+    </>
+  )
+}
+```
+
