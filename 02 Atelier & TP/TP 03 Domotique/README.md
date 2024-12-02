@@ -1,6 +1,6 @@
 # TP domotique
 
-- Créer Appareil.ts la classe BO Business Object
+- Créer Appareil.ts(TypeScript) ou Appareil.js (JavaScript) la classe BO Business Object
 - Créer un tableau d'objets appareils
 - Créer le component AppareilComponent.tsx
 - Envoyer les élèments du tableau au component AppareilComponent

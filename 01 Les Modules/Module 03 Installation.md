@@ -46,15 +46,23 @@ npm install --save-dev @fortawesome/fontawesome-free
 ### Importer Boostrap et Font  Awesome
   
 **Main.tsx***  
-  
+
+```tsx
+import '@fortawesome/fontawesome-free/css/all.min.css'; // ici 
+import 'bootstrap/dist/css/bootstrap.min.css'; // ici 
+``` 
 ```ts
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-
+//---------------------------------------------------------
+//---------------------------------------------------------
+// on ajoute ici ..
+import '@fortawesome/fontawesome-free/css/all.min.css'; // ici 
 import 'bootstrap/dist/css/bootstrap.min.css'; // ici 
-import '@fortawesome/fontawesome-free/css/all.min.css'; // ici on ajoute
+//---------------------------------------------------------
+//---------------------------------------------------------
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
