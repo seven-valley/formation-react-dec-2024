@@ -1,5 +1,5 @@
 # TP domotique
-<img src="../../img/tp/tpd.webp" width="200">
+<img src="../../img/tp/tpd.webp" width="400">
 
 - Créer Appareil.ts(TypeScript) ou Appareil.js (JavaScript) la classe BO Business Object
 - Créer un tableau d'objets appareils
