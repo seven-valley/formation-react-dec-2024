@@ -31,18 +31,18 @@ Dans Real Time data Base
 Créer le tableau  **nouveauClients** à partir de personnes et clients  
 utiliser <code>.filter</code> et <code>.find</code>
 ```js
-    const personnes =[
-        {id:1,nom:'BRAD',prenom:'PITT'},
-        {id:2,nom:'TOM',prenom:'CRUISE'},
-        {id:3,nom:'Angelina',prenom:'Jolie'},
-        {id:4,nom:'Tom',prenom:'CRUISE'}
-    ];
-    const clients =[
-        {id:1,nom:'BRAD',prenom:'PITT'},
-        {id:3,nom:'Angelina',prenom:'Jolie',age:16}
-    ];
+const personnes =[
+    {id:1,nom:'Brad',prenom:'PITT'},
+    {id:2,nom:'Bruce',prenom:'WILLIS'},
+    {id:3,nom:'Angelina',prenom:'Jolie'},
+    {id:4,nom:'Tom',prenom:'CRUISE'}
+];
+const clients =[
+    {id:1,nom:'BRAD',prenom:'PITT'},
+    {id:3,nom:'Angelina',prenom:'Jolie',age:16}
+];
 // const nouveauClients =[
-//         {id:2,nom:'TOM',prenom:'CRUISE'},
+//         {id:2,nom:'Bruce',prenom:'WILLIS'},
 //         {id:4,nom:'Tom',prenom:'CRUISE'}
 //     ];
 ```
@@ -50,18 +50,18 @@ utiliser <code>.filter</code> et <code>.find</code>
 Créer le tableau  **dejaClients** à partir de personnes et clients  
 utiliser <code>.filter</code> et <code>.find</code>
 ```js
-    const personnes =[
-        {id:1,nom:'BRAD',prenom:'PITT'},
-        {id:2,nom:'TOM',prenom:'CRUISE'},
-        {id:3,nom:'Angelina',prenom:'Jolie'},
-        {id:4,nom:'Tom',prenom:'CRUISE'}
-    ];
-    const clients =[
-        {id:1,nom:'BRAD',prenom:'PITT'},
-        {id:3,nom:'Angelina',prenom:'Jolie',age:16}
-    ];
+const personnes =[
+    {id:1,nom:'Brad',prenom:'PITT'},
+    {id:2,nom:'Bruce',prenom:'WILLIS'},
+    {id:3,nom:'Angelina',prenom:'Jolie'},
+    {id:4,nom:'Tom',prenom:'CRUISE'}
+];
+const clients =[
+    {id:1,nom:'BRAD',prenom:'PITT'},
+    {id:3,nom:'Angelina',prenom:'Jolie',age:16}
+];
 // const dejaClients =[
-//     {id:1,nom:'BRAD',prenom:'PITT'},
+//     {id:1,nom:'Brad',prenom:'PITT'},
 //     {id:3,nom:'Angelina',prenom:'Jolie'},
 //     ];
 ```
@@ -70,15 +70,15 @@ utiliser <code>.filter</code> et <code>.find</code>
 Créer le tableau  **majeurs** à partir de personnes  
 utiliser <code>.fitler</code>
 ```js
-        const personnes =[
-        {id:1,nom:'BRAD',prenom:'PITT',age:18},
-        {id:2,nom:'TOM',prenom:'CRUISE',age:15},
-        {id:3,nom:'Angelina',prenom:'Jolie',age:16},
-        {id:4,nom:'TOM',prenom:'CRUISE',age:61}
-    ];
+const personnes =[
+    {id:1,nom:'Brad',prenom:'PITT',age:18},
+    {id:2,nom:'TOM',prenom:'CRUISE',age:15},
+    {id:3,nom:'Angelina',prenom:'Jolie',age:16},
+    {id:4,nom:'TOM',prenom:'CRUISE',age:61}
+];
    
 // const majeurs =[
-//     {id:1,nom:'BRAD',prenom:'PITT',age:18},
+//     {id:1,nom:'Brad',prenom:'PITT',age:18},
 //     {id:4,nom:'TOM',prenom:'CRUISE',age:61}
 //     ];
 ```
@@ -97,4 +97,59 @@ const items = [
 
 let totalPrice = 0;
 
+```
+
+# Correction
+
+## Ecercice 1 & 2
+```js
+const personnes =[
+    {id:1,nom:'Brad',prenom:'PITT'},
+    {id:2,nom:'Bruce',prenom:'WILLIS'},
+    {id:3,nom:'Angelina',prenom:'Jolie'},
+    {id:4,nom:'Tom',prenom:'CRUISE'}
+];
+const clients =[
+    {id:1,nom:'BRAD',prenom:'PITT'},
+    {id:3,nom:'Angelina',prenom:'Jolie',age:16}
+];
+// excercice 1
+const nouveauClients = personnes.filter(p => !clients.find(c => c.id === p.id));
+console.log(nouveauClients);
+
+// excercice 2
+const dejaClients = personnes.filter(p => !clients.find(c => c.id === p.id));
+console.log(dejaClients);
+```
+
+## Ecercice 3
+```js
+const personnes =[
+    {id:1,nom:'Brad',prenom:'PITT',age:18},
+    {id:2,nom:'TOM',prenom:'CRUISE',age:15},
+    {id:3,nom:'Angelina',prenom:'Jolie',age:16},
+    {id:4,nom:'TOM',prenom:'CRUISE',age:61}
+];
+const majeur = personnes.filter((personne)=>{
+    return personne.age>17
+})
+console.log(majeur)
+```
+
+## Ecercice 4
+```js
+const items = [
+  { name: 'Apple', price: 1 },
+  { name: 'Orange', price: 2 },
+  { name: 'Mango', price: 3 },
+];
+const total = items.reduce((total, item) => total + item.price, 0);
+console.log(total)
+
+const total2 = items.map((item) => item.price).reduce((a, b) => a + b);
+console.log(total);
+
+let total3 =0
+items.map((item) => total3 += item.price); 
+console.log(total3);
 ```
