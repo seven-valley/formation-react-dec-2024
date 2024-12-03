@@ -1,4 +1,46 @@
+# useRef ?
+Prise en main de <code>useRef</code> 
+## Comment utiliser useRef ?
+Mise en place de <code>useRef</code>   
+1 - Importer  
+2 - Déclarer  & définir une valeur par défault avec <code>useRef()</code>
+3 - afficher _On note que la valeur est stocker dans l'attribut_ <code>.current</code>  
+  
+```jsx
+import { useRef } from 'react';
+export default function App() {
+  const nombre = useRef(12);
+  return (
+    <h1>{nombre.current}</h1>
+  )
+}
+```
+## Cela ne marche pas ?
+Lorsque je clique la valeur dans la vue HTML **ne** change **pas** !    
+**Pourquoi ?**  
+La modification d'un useRef **ne** déclenche **pas** un "Redering"  
+
+```jsx
+import { useRef } from 'react';
+export default function App() {
+  const nombre = useRef(12);
+  const changer = () => {
+    nombre.current = 24;
+  }
+  return (
+    <>
+    <h1>{nombre.current}</h1>
+    <button onClick={changer}></button>
+    </>
+  )
+}
+```
+
 # useRef VERSUS UseState
+Afin de bien comprendre la différence entre <code>useState</code> et <code>useRef</code> 
+Voici un exmple avec 2 compteurs  
+Nous pouvons constater que la modification de <code>useRef</code> ne déclencle pas un **rendering**
+
 ```jsx
 
 import { useState,useRef } from "react";
