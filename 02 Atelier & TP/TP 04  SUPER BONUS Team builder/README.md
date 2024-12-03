@@ -11,7 +11,7 @@ Dans Real Time data Base
 
 # Créer des components
 <code>TrLigne.jsx</code> Appeler dans l' équipe et la liste des employés  
-<code>TableEquipe.jsx</code>   
+<code>TableEquipe.jsx</code> le composant Equipe    
 
 # Créer les business object
 - Personne.ts
