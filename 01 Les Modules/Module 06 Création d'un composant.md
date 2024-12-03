@@ -1,10 +1,22 @@
 
-# Personne.ts
+# Création du composant Personne.jsx
+Création du repertoir <code>models</code>
+Création du fichier <code>Personne.jsx</code>
+
+```
+|-- projets-node
+        |-- projet-1
+            |-- backend
+```
+
+Création du repertoir <code>models</code>  
+Création du repertoir <code>models</code>  
+
 ```ts
 export default class Personne{
-    // 3 constructor
     constructor(public prenom?:string,public nom?:string){
-    // this.prenom = prenom;
+        // this.prenom = prenom;
+        // 3 constructor
     // this.nom = nom;     
     }
 }
