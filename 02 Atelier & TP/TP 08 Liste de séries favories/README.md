@@ -1,11 +1,7 @@
 # TP 08 - Mes Séries préférées
 <img src="../../img/tp/tp7.webp" width="400"> 
 
-- Récupérer un tableau de séries
-avec **s=** pour récupérer un tableau
-``` 
-http://www.omdbapi.com/?apikey=xxxx&s=star
-```
+
 :one: Création du component <code>TrSearch.jsx</code>
 ```html
 <tr>
@@ -26,7 +22,12 @@ http://www.omdbapi.com/?apikey=xxxx&s=star
     </td>
 </tr>
 ```  
-:two: Mise en place de  <code>Fetch</code> pour rechercher une série  
+:two: Mise en place de  <code>Fetch</code> pour rechercher une série 
+- Récupérer un tableau de séries
+avec **s=** pour récupérer un tableau
+``` 
+http://www.omdbapi.com/?apikey=xxxx&s=star
+``` 
 :three: Création du useState  <code>series</code>   
 ```jsx
   const [series,setSeries] = useState([]);
