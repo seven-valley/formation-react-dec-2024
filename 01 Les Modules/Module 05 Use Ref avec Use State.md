@@ -18,7 +18,7 @@ export default function App() {
 ## Cela ne marche pas ?
 Lorsque je clique la valeur dans la vue HTML **ne** change **pas** !    
 **Pourquoi ?**  
-La modification d'un useRef **ne** déclenche **pas** un "Redering"  
+La modification d'un useRef **ne** déclenche **pas** un **"Redering"** de la vue HTML   
 
 ```jsx
 import { useRef } from 'react';
@@ -37,9 +37,9 @@ export default function App() {
 ```
 
 # useRef VERSUS UseState
-Afin de bien comprendre la différence entre <code>useState</code> et <code>useRef</code> 
-Voici un exmple avec 2 compteurs  
-Nous pouvons constater que la modification de <code>useRef</code> ne déclencle pas un **rendering**
+Afin de bien comprendre la différence entre <code>useState</code> et <code>useRef</code>     
+Voici un exmple avec 2 compteurs    
+Nous pouvons constater que la modification de <code>useRef</code> **ne** déclencle **pas** un **"Rendering"** de la vue HTML.
 
 ```jsx
 
