@@ -202,7 +202,7 @@ export default function App() {
 
 # Modifier le CSS avec les template de gabarits ${}
 Remplacer la concaténation par **${}**  
-<img src="image.png" width="100"> <img src="image-1.png" width="100">
+<img src="../img/04/btn1.png" width="100"> <img src="../img/04/btn1.png" width="100">
   
 <br>
 

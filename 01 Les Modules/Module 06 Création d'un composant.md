@@ -4,52 +4,51 @@ Création du repertoir <code>models</code>
 Création du fichier <code>Personne.jsx</code>
 
 ```
-|-- projets-node
-        |-- projet-1
-            |-- backend
+|-- src
+        |-- models
+            |-- Personne.js
 ```
 
-Création du repertoir <code>models</code>  
-Création du repertoir <code>models</code>  
+```tsx
+export default function Personne({personne,indice,qui}) {
 
-```ts
-export default class Personne{
-    constructor(public prenom?:string,public nom?:string){
-        // this.prenom = prenom;
-        // 3 constructor
-    // this.nom = nom;     
-    }
+  return (
+    <>
+      <h1>{indice} {personne.prenom} {personne.nom}</h1>
+      <button onClick={()=>qui(indice)}>qui ?</button>
+    </>
+  )
 }
 ```
 
 # App.tsx
 ```tsx
-import PersonneComponent from "./components/PersonneComponent";
-import Personne from "./models/Personne.ts"
-
+import './App.css'
+import Personne from './models/Personne';
 export default function App() {
- const personnes:Personne[] =[
+const [personnes, setPersonnes] = useState([
   {prenom:'Brad',nom:'PITT'},
-  {prenom:'Nicolas',nom:'CAGE'}
- ]
- const qui=(indice:number):void=>{
-  console.log(indice);
-  console.log(personnes[indice]);
- } 
+  {prenom:'Angelina',nom:'JOLIE'},
+]);
+  const qui = (indice) => {
+    console.log("qui",indice);
+    console.log(personnes[indice]);
+  }
   return (
     <>
-    { personnes.map((p:Personne,indice:number)=> <PersonneComponent 
-    key={indice}
-    p={p}
-    indice={indice}
-    qui={qui}
-    />)}
-   
-   
+    {
+      personnes.map((personne,indice) => 
+      <Personne 
+      key={indice} 
+      personne={personne} 
+      indice={indice}
+      qui={qui}
+      />)
+    }
     </>
-
   )
 }
+
 ```
 
 # PersonneComponent.tsx
