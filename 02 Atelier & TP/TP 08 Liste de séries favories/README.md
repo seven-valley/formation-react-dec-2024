@@ -37,7 +37,7 @@ http://www.omdbapi.com/?apikey=xxxx&s=star
 ```jsx
   const [tabFav,setTabFav] = useState([]);
 ```
-:six: Fonction ajouter une série au tableau de fav <code>series</code> 
+:six: Fonction ajouter une série au tableau de fav <code>series</code>   
 :seven: Créer une fonction asynchrone 
 pour récupéré la note imdb (serie.imdbRating) avec l'id du film(serie.imdbID)
 **i**=serie.imdbID
