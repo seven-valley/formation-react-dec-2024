@@ -39,8 +39,9 @@ http://www.omdbapi.com/?apikey=xxxx&s=star
 ```
 :six: Fonction ajouter une série au tableau de fav <code>series</code>   
 :seven: Créer une fonction asynchrone   
-pour récupérer la note imdb (serie.imdbRating) avec l'id du film(serie.imdbID)  
-**i**=serie.imdbID
+pour récupérer la note imdb (serie.imdbRating)   
+avec l'id du film(serie.**imdbID**)  
+**i**=serie.**imdbID**
 ```
 http://www.omdbapi.com/?apikey=xxxx&i=zzz
 ```
