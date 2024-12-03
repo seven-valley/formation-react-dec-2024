@@ -10,8 +10,8 @@ Dans Real Time data Base
 - créer un noeud equipes.json
 
 # Créer des components
-<code>TrLigne.jsx</code> Appeler dans l' équipe et la liste des employé
-<code>TableEquipe.jsx</code> 
+<code>TrLigne.jsx</code> Appeler dans l' équipe et la liste des employés  
+<code>TableEquipe.jsx</code>   
 
 # Créer les business object
 - Personne.ts
