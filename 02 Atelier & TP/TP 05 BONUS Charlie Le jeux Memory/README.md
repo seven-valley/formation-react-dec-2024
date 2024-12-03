@@ -7,7 +7,7 @@
 ## Créer un jeux pour téléphone portable !
 
 - Créer un tableau 1 de 12 entier (de 0 à 11)    
-- Créer un tableau 2 : d'entier d'une longueur de 24   
+- Créer un tableau 2 : d'entier d'une longueur de 24  avec <code>concat()</code>  
 contenant 2 fois des entiers de 0 à 11
 - Vous devez créer le tableau 2 en concaténant le tableau 1 ( tab2 = tab1 + tab1)  
 - Mélanger ce tableau  
@@ -80,7 +80,6 @@ function melanger(tab) {
     // tant que l'emplacement n'est pas vide
 	tab2[x]= tab[i];
   }
-  
   return tab2;
 }
 //-----------------------------------------------
