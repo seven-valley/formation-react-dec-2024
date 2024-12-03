@@ -1,5 +1,16 @@
-# Correction Parti
-
+# Correction Partie 1
+:one: Création du component <code>TrSearch</code>  
+:two: Mise en place de  <code>Fetch</code> pour rechercher une série  
+:three: Création du useState  <code>series</code>   
+```jsx
+  const [series,setSeries] = useState([]);
+```
+:four: Créer la fonction ajouter    
+:five: Création du useState  <code>tabFav</code>    
+```jsx
+  const [tabFav,setTabFav] = useState([]);
+```
+:six: Fonction ajouter une série au tableau de fav <code>series</code>  
 ## TrSearch.js
 ```js
 export default function TrSearch(props) {
