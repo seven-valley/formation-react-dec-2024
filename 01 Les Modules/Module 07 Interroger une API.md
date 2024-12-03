@@ -1,4 +1,4 @@
-# Exemple OmdbAPI et fetc
+# Exemple OmdbAPI et Fetch
 ```jsx
 import { useState } from "react";
 
