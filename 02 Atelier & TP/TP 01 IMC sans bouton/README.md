@@ -2,7 +2,7 @@
 - enlever le bouton  
 - relier directement un champ à un useRef astuce  
 ```
-ref="info"
+ref={info}
 ```
 # Correction
 
