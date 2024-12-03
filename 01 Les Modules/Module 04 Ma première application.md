@@ -41,11 +41,11 @@ export default function App() {
 ```
 
 # Mise en place de ma première application
-1 - Mise en place d’un formlaire  
-2 - L’action : (le bouton) gestion du "submit"  
-3 - Mise en place de useState  
+:one: Mise en place d’un formlaire  
+:two: L’action : (le bouton) gestion du "submit"  
+:three: Mise en place de useState  
 
-## 1 - Mise en place du formulaire
+## :one: - Mise en place du formulaire
 ```tsx
 return (
     <> 
@@ -70,7 +70,7 @@ return (
     </>
   )
 ```
-## 2 - L’action : (le bouton) gestion du "submit"
+## :two: - L’action : (le bouton) gestion du "submit"
 ```tsx
 export default function App() {
   function affiche(e) {
@@ -107,7 +107,7 @@ export default function App() {
   );
 }
 ```
-## 3 - Mise en place de useState  
+## :three: - Mise en place de useState  
 
 ```tsx
 import "./App.css";
@@ -134,8 +134,9 @@ export default function App() {
 }
 ```
 
-## 3b - Mise en place de useState :heart_eyes:  
-### :rocket: Avec la cerise sur le gateau
+## Mise en place des littéraux de gabarit :heart_eyes:  
+Remplacer la concaténation par **${}**
+### :rocket: Avec la cerise sur le gateau : **${}**
 ```tsx
 import "./App.css";
 import {useState} from 'react';// 1: importer
@@ -160,22 +161,7 @@ export default function App() {
 }
 ```
 
-## 3c - ajouter Bootstrap
-## importer bootstrap dans main.tsx
-```tsx
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
-import "bootstrap/dist/css/bootstrap.min.css";
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
-```
-
+## Ajouter Bootstrap et ses classes
 ```tsx
 import "./App.css";
 import {useState} from 'react';// 1: importer
@@ -210,10 +196,9 @@ export default function App() {
 }
 ```
 
-## Modifier le CSS avec les template de gabarits ${}
+# Modifier le CSS avec les template de gabarits ${}
 ```jsx
 import { useState } from 'react'
-import './App.css'
 
 export default function App() {
   const [etat,setEtat]= useState(true)
@@ -222,15 +207,14 @@ export default function App() {
     setEtat(!etat)
   }
   return (
-    <>
     <div className="container">
-    {/* "btn btn-success" "btn btn-danger" */}
-    <button 
-    className={`btn btn-${etat? 'danger': 'success'}`} 
-    onClick={changer}>{etat ? 'OFF' : 'ON'}</button>
-    <h1>{etat ? 'ON' : 'off'}</h1>
+      {/* className="btn btn-success" OU className="btn btn-danger" */}
+      <button 
+        className={`btn btn-${etat? 'danger': 'success'}`} 
+        onClick={changer}>{etat ? 'OFF' : 'ON'}</button>
+
+      <h1>{etat ? 'ON' : 'off'}</h1>
     </div>
-    </>
   )
 }
 ```
