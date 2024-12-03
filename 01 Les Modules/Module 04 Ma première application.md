@@ -1,4 +1,4 @@
-# Module 4 Ma première application
+# Module 4 - Ma première application
 ![module-4](../img/04/module-4.png)
   
 ## 2 façon d'écrire "export default"
@@ -45,7 +45,7 @@ export default function App() {
 :two: L’action : (le bouton) gestion du "submit"  
 :three: Mise en place de useState  
 
-## :one: - Mise en place du formulaire
+## :one: Mise en place du formulaire
 ```tsx
 return (
     <> 
@@ -70,7 +70,7 @@ return (
     </>
   )
 ```
-## :two: - L’action : (le bouton) gestion du "submit"
+## :two: L’action : (le bouton) gestion du "submit"
 ```tsx
 export default function App() {
   function affiche(e) {
@@ -107,7 +107,7 @@ export default function App() {
   );
 }
 ```
-## :three: - Mise en place de useState  
+## :three: Mise en place de useState  
 
 ```tsx
 import "./App.css";
