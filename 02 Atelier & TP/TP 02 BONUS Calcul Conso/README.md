@@ -9,8 +9,9 @@
 - créer un formulaire en javascript
 - Afficher le résultat
 
-**Par exemple**
-consomation = (**litre** * 100) / **km**  
+**Par exemple**  
+  
+consommation = (**litre** * 100) / **km**  
 
 pour 50 litres  
 j'ai fait 1000 kilomètres  
