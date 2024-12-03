@@ -45,6 +45,6 @@ avec l'id du film(serie.**imdbID**)
 ```
 http://www.omdbapi.com/?apikey=xxxx&i=zzz
 ```
-:eight: Quand on ajoute la série elle s'enlève de la liste de recherche
-:nine: Enlever la série de la liste de favories
-:ten: Utiliser local storage
+:eight: Quand on ajoute la série elle s'enlève de la liste de recherche  
+:nine: Enlever la série de la liste de favories  
+:ten: Utiliser local storage  
