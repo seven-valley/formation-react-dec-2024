@@ -37,7 +37,7 @@ export default function App() {
 ```
 
 # useRef VERSUS UseState
-Afin de bien comprendre la différence entre <code>useState</code> et <code>useRef</code>     
+Afin de bien comprendre la différence entre <code>useState</code> et <code>useRef</code>    
 Voici un exmple avec 2 compteurs    
 Nous pouvons constater que la modification de <code>useRef</code> **ne** déclencle **pas** un **"Rendering"** de la vue HTML.
 
@@ -69,10 +69,25 @@ export default function App() {
 }
 ```
 
-# 2 ways binding étape 1
+# Le 2 ways binding en 4 étapes 
+## Epape 1
+Utilisation de <code>onChange</code> sur input
+```jsx
+import { useRef } from "react";
+export default function App() {
+  const afficher=(event)=>{
+    console.log(event.target.value); 
+  }
+  return (
+      <input name="prenom"   onChange={afficher}/>
+  );
+}
+```
+## Epape 2
+Mise en place de **2 champs** input  
 ```jsx
 
-import { useState,useRef } from "react";
+import { useRef } from "react";
 
 export default function App() {
   const afficher=(event)=>{
@@ -90,7 +105,7 @@ export default function App() {
 }
 ```
 
-# 2 ways binding étape 2
+## Epape 3
 ```jsx
 
 import { useState,useRef } from "react";
