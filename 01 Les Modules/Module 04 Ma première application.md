@@ -141,6 +141,8 @@ export default function App() {
 ## Mise en place des littéraux de gabarit :heart_eyes:  
 Remplacer la concaténation par **${}**
 <img src="image.png" width="100"> <img src="image-1.png" width="100">
+  
+<br>
 ### :rocket: Avec la cerise sur le gateau : **${}**
 ```tsx
 import "./App.css";
