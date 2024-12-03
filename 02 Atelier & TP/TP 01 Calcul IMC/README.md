@@ -25,7 +25,7 @@ Si 30 <imc < 35  je suis en tranche obésité
 Si 35 <imc < 40  je suis en tranche obésité massive    
 Si  > 40  je suis en tranche obésité sévère 
   
-changer les couleur className en fonction de l'imc
+**TP2 :** changer les couleur className en fonction de l'imc
   
 Afficher le poids à atteindre
 
