@@ -1,5 +1,5 @@
 # TP 07 Cocktail VIP avec Firebase
-<img src="../../img/tp/firebase-svg.webp" width="50"> 
+<img src="../../img/tp/firebase-svg.webp" width="150"> 
 
 ## Objectifs
 <img src="../../img/tp/tp8.webp" width="400"> 
