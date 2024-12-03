@@ -17,6 +17,5 @@ ma consommation est de 5 litres/100km
 ## Partie 2
 <img src="../../img/tp/tp-apha-2.webp" width="200">
 
-![alt text](tp-apha-2.webp) 
 - enlever le bouton !
 
