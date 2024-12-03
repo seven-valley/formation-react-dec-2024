@@ -19,9 +19,9 @@ Dans Real Time data Base
 
 # Etapes
 - ajouter une equipe
+- supprimer une equipe  
 - ajouter une personne dans une equipe
 - ajouter une personne dans l'entreprise
-- supprimer une equipe
 - enlever une personne d'une equipe
 - enlever la personne de l'entreprise
 
