@@ -2,9 +2,9 @@
 Prise en main de <code>useRef</code> 
 ## Comment utiliser useRef ?
 Mise en place de <code>useRef</code>   
-1 - Importer  
-2 - Déclarer  & définir une valeur par défault avec <code>useRef()</code>
-3 - afficher _On note que la valeur est stocker dans l'attribut_ <code>.current</code>  
+:one: Importer  
+:two: Déclarer  & définir une valeur par défault avec <code>useRef()</code>  
+:three: afficher _On note que la valeur est stocker dans l'attribut_ <code>.current</code>  
   
 ```jsx
 import { useRef } from 'react';
