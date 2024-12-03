@@ -1,4 +1,4 @@
-# TP 07 Cocktail VIP avec Firebase
+# TP 09 - Cocktail VIP avec Firebase
 <img src="../../img/tp/firebase-svg.webp" width="150"> 
 
 ## Objectifs
