@@ -1,7 +1,14 @@
 # TP  01 IMC
-[tp1](https://sevenvalley.fr/tp-javascript/tp1/index.html)
+## TP 1
+<img src="../../img/tp/tp1-imc.webp" width="200">
+
+## TP 2 - avec couleurs
+<img src="../../img/tp/tp2-imc.webp" width="200">
   
-[tp2](https://sevenvalley.fr/tp-javascript/tp2/index.html)
+## Demo live  
+<a href="https://sevenvalley.fr/tp-javascript/tp1/index.html" target="_blank">TP 1 Live preview</>
+<br><br>
+<a href="https://sevenvalley.fr/tp-javascript/tp2/index.html" target="_blank">TP 2 Live preview</>
 
 - Saisir le poids en kg
 - Saisir la taille en m
