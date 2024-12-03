@@ -1,6 +1,6 @@
 # Correction Parti
 
-## TrSearch.sj
+## TrSearch.js
 ```js
 export default function TrSearch(props) {
     return (
