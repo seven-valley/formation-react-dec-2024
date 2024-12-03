@@ -6,9 +6,9 @@
 <img src="../../img/tp/tp2-imc.webp" width="200">
   
 ## Demo live  
-<a href="https://sevenvalley.fr/tp-javascript/tp1/index.html" target="_blank">TP 1 Live preview</>
+<a href="https://sevenvalley.fr/tp-javascript/tp1/index.html" target="_blank">TP 1 Live preview</a>
 <br><br>
-<a href="https://sevenvalley.fr/tp-javascript/tp2/index.html" target="_blank">TP 2 Live preview</>
+<a href="https://sevenvalley.fr/tp-javascript/tp2/index.html" target="_blank">TP 2 Live preview</a>
 
 - Saisir le poids en kg
 - Saisir la taille en m
