@@ -2,7 +2,8 @@
 # Plan de la formation
 
 ## 01 - Présentation
-![module-1](../img/01/module-1.png)
+<img src="../img/01/module-1.png" width="200">  
+
 - Javascript ou Vanilla Javascript  
 - Les Framework JavaScript  
 - Historique  
