@@ -42,8 +42,7 @@ Voici un exmple avec 2 compteurs
 Nous pouvons constater que la modification de <code>useRef</code> **ne** déclencle **pas** un **"Rendering"** de la vue HTML.
 
 ```jsx
-
-import { useState,useRef } from "react";
+import { useRef } from "react";
 
 export default function App() {
   const nombre = useRef(0); //nombre.current =0
@@ -74,6 +73,7 @@ export default function App() {
 Utilisation de <code>onChange</code> sur input
 ```jsx
 import { useRef } from "react";
+
 export default function App() {
   const afficher=(event)=>{
     console.log(event.target.value); 
@@ -86,7 +86,6 @@ export default function App() {
 ## Epape 2
 Mise en place de **2 champs** input  
 ```jsx
-
 import { useRef } from "react";
 
 export default function App() {
@@ -107,14 +106,13 @@ export default function App() {
 
 ## Epape 3
 ```jsx
-
 import { useState,useRef } from "react";
 
 export default function App() {
-  const [message,SetMessage]=useState<string>('');
+  const [message,SetMessage]=useState('');
   const prenom = useRef('');
   const nom = useRef('');
-  const afficher=(event: React.ChangeEvent<HTMLInputElement>)=>{
+  const afficher=(event)=>{
     // le nom du champ :
     if (event.target.name =='prenom' ){
       prenom.current = event.target.value;
@@ -136,34 +134,10 @@ export default function App() {
 
 ```
 
-# 2 ways binding étape 3
-```jsx
-export default function App() {
-  const [message,SetMessage]=useState<string>('');
-  const prenom = useRef('');
-  const nom = useRef('');
-  const afficher=(event: React.ChangeEvent<HTMLInputElement>)=>{
-    // le nom du champ :
-    if (event.target.name =='prenom' ){
-      prenom.current = event.target.value;
-    }else{
-      nom.current = event.target.value.toUpperCase();
-    }
-    SetMessage(`${prenom.current} ${nom.current}`);
-
-  }
-  return (
-    <>
-      <input name="prenom"  placeholder="Votre prénom" onChange={afficher}/>
-      <br /><br />
-      <input name="nom"  placeholder="Votre nom" onChange={afficher}/>
-      <h1>{message}</h1>
-    </>
-  );
-}
-```
-
-# 3 version épuré et simplifiée
+## Epape 4
+### version épuré et simplifiée
+je link les champs input directement avec <code>ref={prenom}</code>  
+Ne pas oublie le <code>.value</code> dans  <code>prenom.current.value</code>  
 ```jsx
 import { useState,useRef } from 'react';
 import './App.css'
