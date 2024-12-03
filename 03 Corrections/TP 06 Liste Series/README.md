@@ -1,5 +1,5 @@
 # Correction Partie 1
-:one: Création du component <code>TrSearch</code>  
+:one: Création du component <code>TrSearch.jsx</code>  
 :two: Mise en place de  <code>Fetch</code> pour rechercher une série  
 :three: Création du useState  <code>series</code>   
 ```jsx

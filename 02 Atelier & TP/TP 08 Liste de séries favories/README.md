@@ -6,7 +6,26 @@ avec **s=** pour récupérer un tableau
 ``` 
 http://www.omdbapi.com/?apikey=xxxx&s=star
 ```
-:one: Création du component <code>TrSearch</code>  
+:one: Création du component <code>TrSearch.jsx</code>
+```html
+<tr>
+    <td>Foundation</td>
+    <td>2021</td>
+    <td>7.4</td>
+    <td>
+        <img
+        src="https://m.media-amazon.com/images/M/xx.jpg"
+        alt="Star Wars"
+        width="80"
+        />
+    </td>
+    <td class="align-middle">
+        <button class="btn btn-outline-danger">
+        <i class="fa fa-trash"></i>
+        </button>
+    </td>
+</tr>
+```  
 :two: Mise en place de  <code>Fetch</code> pour rechercher une série  
 :three: Création du useState  <code>series</code>   
 ```jsx
