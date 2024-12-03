@@ -71,6 +71,8 @@ return (
   )
 ```
 ## :two: L’action : (le bouton) gestion du "submit"
+<img src="image.png" width="100"> <img src="image-1.png" width="100">
+
 <code> e.preventDefault();</code> empeche/bloque l'envoie du formulaire ou le Reload de la page  
 ```tsx
 export default function App() {
