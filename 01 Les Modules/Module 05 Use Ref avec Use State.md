@@ -135,7 +135,7 @@ export default function App() {
 ```
 
 ##  :four: Epape 4
-### version épuré et simplifiée :rocket:
+### Version épurée et simplifiée :rocket:
 je link les champs input directement avec <code>ref={prenom}</code>  
 Ne pas oublie le <code>.value</code> dans  <code>prenom.current.value</code>  
 ```jsx
