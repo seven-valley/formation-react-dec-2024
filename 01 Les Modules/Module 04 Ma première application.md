@@ -71,6 +71,7 @@ return (
   )
 ```
 ## :two: L’action : (le bouton) gestion du "submit"
+<code> e.preventDefault();</code> empeche/bloque l'envoie du formulaire ou le Reload de la page  
 ```tsx
 export default function App() {
   function affiche(e) {
@@ -88,6 +89,7 @@ export default function App() {
   );
 }
 ```
+  
 Encore mieux avec les fonctions fléchées : **arrow function**
   
 ```tsx
