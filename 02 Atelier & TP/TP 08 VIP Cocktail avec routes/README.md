@@ -1,8 +1,8 @@
 # TP 10 Cocktail VIP avec les routes
-<img src="../../img/tp/tp10-1.png" width="150"> 
+<img src="../../img/tp/tp10-1.png" width="300"> 
 
 
-<img src="../../img/tp/tp10-2.png" width="200"> 
+<img src="../../img/tp/tp10-2.png" width="400"> 
 
 ## Objectifs
 
