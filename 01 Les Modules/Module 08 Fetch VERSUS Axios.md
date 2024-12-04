@@ -7,7 +7,7 @@
 - Enlever un enregistrement avec la méthode **DELETE**  
 
 # 1 - Mise en place de Axios
-![axios](Axios.webp)  
+![axios](../img/axios.webp)  
 https://axios-http.com/docs/intro
 
 
