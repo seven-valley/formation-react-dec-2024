@@ -302,3 +302,107 @@ export default function App() {
 }
 
 ```
+# Version 3 avec JS
+```jsx
+import { useState } from 'react'
+
+
+export default function App() {
+  const [info, setInfo] = useState({
+    imc: '',
+    tranche: 'abc'
+  });
+  const calcul = (event) => {
+    const info2 = {};
+
+    event.preventDefault()
+    const poids = event.target.poids.value;
+    const taille = event.target.taille.value;
+    event.target.reset(); // vider input
+    const imc = parseFloat(poids) / (parseFloat(taille) * parseFloat(taille))
+    info2.imc = imc.toFixed(1);
+    // definir les tranche
+    if (imc < 18.5) {
+      info2.tranche = 'maigreur'
+    }
+    else if (imc < 25) { // 18.5 < imc <25
+      info2.tranche = 'normal'
+    }
+    else if (imc < 30) {
+      info2.tranche = 'surpoids'
+    }
+    else if (imc < 35) {
+      info2.tranche = 'obésité '
+    }
+    else if (imc < 40) {
+      info2.tranche = 'obésité massive'
+    } else if (imc > 40) {
+      info2.tranche = 'obésité morbide'
+    }
+    setInfo(info2);
+  }
+
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container">
+
+          <a className="navbar-brand" href="#">
+            <i className="fa-solid fa-weight-scale"></i>
+            Calcul IMC</a>
+        </div>
+      </nav>
+      <div className="container">
+        <div className="row">
+          <div className="col-4 pt-4">
+            <h1 className="h3">Calculer votre IMC</h1>
+            <form onSubmit={calcul}>
+              <input
+                name="poids"
+                aria-label="Poids"
+                className="form-control"
+                placeholder="Poids en kg."
+              />
+
+              <input
+                name="taille"
+                aria-label="Taille"
+                className="form-control mt-3"
+                placeholder="taille en m."
+              />
+
+              <button className="btn btn-success mt-3 col-12">
+                <i className="fa-solid fa-weight-scale"></i>
+              </button>
+            </form>
+            {info.imc.length > 0 &&
+              <div className="alert alert-secondary mt-4" role="alert">
+                <h3>{info.imc}</h3>
+                <p>{info.tranche}</p>
+              </div>
+            }
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <footer className="py-5 bg-dark">
+        <div className="container px-4 px-lg-5">
+          <p className="m-0 text-center text-white">
+            Copyright &copy; Seven Valley 2023
+          </p>
+        </div>
+      </footer>
+    </>
+
+
+
+  )
+}
+
+```
