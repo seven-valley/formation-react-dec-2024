@@ -7,6 +7,7 @@ export default  function App() {
   const [tuiles,setTuiles] = useState<number[]>([])
   const memo = useRef<number>(-1);
   const win = useRef<number>(0);
+  const myDate = useRef<any>(0);
   useEffect(()=>{
     const tab12:number[] = [0,1,2,3,4,5,6,7,8,9,10,11]
     let tab24:number[] = tab12.concat(tab12) // tab24 = tab12 +tab12
@@ -18,7 +19,9 @@ export default  function App() {
     if (memo.current == -1){ // 1er clique
       console.log('1er')
       console.log(indice)
-
+      if (myDate.current == 0){
+        myDate.current = new Date();
+      }
       memo.current = indice
     }
     else{ // 2em clique
@@ -36,7 +39,10 @@ export default  function App() {
         }
       }
       if (win.current == 12){
-        alert('WIN WIN !!!');
+        const myDate2 = new Date();
+        let dif = (myDate2.getTime() - myDate.current.getTime())/1000; 
+        
+        alert('WIN WIN !!! '+dif+ 'secondes');
       }
       memo.current = -1
     }
@@ -51,6 +57,7 @@ export default  function App() {
         tuile={tuile} 
         indice={indice}
         comparer={comparer}
+        memo={memo.current}
         />)
       }
     </div>
