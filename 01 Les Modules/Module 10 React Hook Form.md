@@ -168,3 +168,48 @@ export default function App() {
   )
 }
 ```
+
+## démo avec gestion d'erreurs avec Bootstrap
+```jsx
+import './App.css'
+import {useForm} from "react-hook-form"
+
+export default function App() {
+ const {register,handleSubmit ,formState:{errors}} = useForm()
+ const valider =(data)=>{
+  console.log(data)
+  console.log(data.prenom)
+  console.log(data.nom)
+ }
+
+  return (
+    <>
+    <div className="container">
+   <div className="col-4">
+    <form onSubmit={handleSubmit(valider)}>
+      <div className="form-floating mb-3">
+
+      <input 
+      id="prenom" 
+      type="text" 
+      {...register("prenom", {
+        required: "Saisir prénom", 
+        pattern: /^[A-Za-z]+$/i,
+       })} 
+      className={`my-3 form-control ${errors.prenom && 'is-invalid'}`}/>
+      <label htmlFor="prenom">Prénom</label>
+      <span className="text-danger">
+      { errors.prenom && <p role="alert">{errors.prenom.message}</p>}
+      </span>
+      </div>
+      <input type="text" {...register("nom")} className="form-control"/>
+      <button type="submit" className="btn btn-primary mt-3">Valider</button>
+    </form>
+    </div>
+    </div>
+    </>
+  )
+}
+
+
+```
