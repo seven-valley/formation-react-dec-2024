@@ -77,7 +77,7 @@ export default function Home() {
       <div className="container">
           <div className="row">
             <div className="col-4">
-              <button onClick={afficher} className="btn btn-danger"> pdf</button>
+              <button onClick={afficher} className="mt-2 btn btn-danger"> <i class="fa-solid fa-file-pdf"></i></button>
               <table className="table table-striped mt-4">
                 <tbody>
                   <tr>
