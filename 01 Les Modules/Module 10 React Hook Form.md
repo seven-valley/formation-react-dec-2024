@@ -200,6 +200,10 @@ export default function App() {
       <label htmlFor="prenom">Prénom</label>
       <span className="text-danger">
       { errors.prenom && <p role="alert">{errors.prenom.message}</p>}
+      {errors.prenom?.type === "pattern" && (
+        <p role="alert">Pas de chiffres</p>
+      )}
+
       </span>
       </div>
       <input type="text" {...register("nom")} className="form-control"/>
@@ -210,6 +214,7 @@ export default function App() {
     </>
   )
 }
+
 
 
 ```
