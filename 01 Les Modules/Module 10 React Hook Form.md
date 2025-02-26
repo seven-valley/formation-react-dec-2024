@@ -175,11 +175,12 @@ import './App.css'
 import {useForm} from "react-hook-form"
 
 export default function App() {
- const {register,handleSubmit ,formState:{errors}} = useForm()
+ const {register,handleSubmit ,formState:{errors},reset} = useForm()
  const valider =(data)=>{
   console.log(data)
   console.log(data.prenom)
   console.log(data.nom)
+  reset();
  }
 
   return (
