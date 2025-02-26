@@ -1,4 +1,7 @@
 # TP 09 Créer un pdf
+
+https://artskydj.github.io/jsPDF/docs/jsPDF.html
+
 ```
 npm i jspdf
 ```
