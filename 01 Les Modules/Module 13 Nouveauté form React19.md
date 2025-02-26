@@ -1,5 +1,5 @@
 # Module 13 
-## Nouveauté React 19 avec les formulaire
+## Nouveauté React 19 avec les formulaires
 
 ```jsx
 import './App.css'
